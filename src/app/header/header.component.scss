@@ -1,0 +1,20 @@
+@import '../../assets/scss/main';
+
+.navbar {
+  background: {
+    color: $white;
+  }
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+  border: {
+    bottom: 1px solid $gray-100;
+  }
+  .container {
+  }
+}
+
+i {
+  color: $secundary-color;
+}

@@ -1,0 +1,23 @@
+@import "variables";
+@import "icon";
+
+a {
+  color: $secundary-color;
+}
+
+.btn-primary {
+  background: {
+    color: $primary-color;
+  }
+  border: 0;
+}
+
+.btn {
+  padding: 20px;
+}
+
+input.form-control {
+  &:focus {
+    border: 1px solid $secundary-color;
+  }
+}

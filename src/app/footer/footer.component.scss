@@ -1,0 +1,27 @@
+@import '../../assets/scss/main';
+
+footer {
+  background: {
+    color: $white;
+  }
+  border: {
+    top: 1px solid $gray-100;
+  }
+  padding: 30px;
+  .credit {
+    h6 {
+      margin: {
+        top: 5px;
+      }
+      font: {
+        weigth: 100;
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}

@@ -27,9 +27,16 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/ionicons/dist/scss/ionicons.scss",
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "src/assets/scss/main.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
