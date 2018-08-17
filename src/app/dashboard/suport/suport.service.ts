@@ -14,11 +14,7 @@ export class SuportService {
   constructor(private http: HttpClient) { }
 
   addSuport(suport: Suport): Observable<Suport> {
-    console.log(suport);
-    return this.http.post<Suport>(
-      `${EMAG_API}/suport`,
-      suport
-    );
+    return this.http.post<Suport>(`${EMAG_API}/suport`, suport);
   }
 
 }

@@ -5,28 +5,28 @@
 
 <p>Fill the filds for send your message.</p>
 
-<form action="" class="mt-5">
+<form [formGroup]="generatorForm" class="mt-5">
   <div class="row">
     <div class="col col-xs-12">
       <label for="north">North:</label>
-      <input type="text" id="north" name="north" class="form-control" placeholder="North">
+      <input type="text" id="north" formControlName="north" class="form-control" placeholder="North">
     </div>
     <div class="col col-xs-12">
       <label for="east">East:</label>
-      <input type="text" class="form-control" placeholder="East">
+      <input type="text" class="form-control" formControlName="east" placeholder="East">
     </div>
     <div class="col col-xs-12">
       <label for="south">South:</label>
-      <input type="text" id="south" name="south" class="form-control" placeholder="South">
+      <input type="text" id="south" formControlName="south" class="form-control" placeholder="South">
     </div>
     <div class="col col-xs-12">
       <label for="west">West:</label>
-      <input type="text" id="west" name="west" class="form-control" placeholder="West">
+      <input type="text" id="west" formControlName="west" class="form-control" placeholder="West">
     </div>
   </div>
   <div class="row mt-3">
     <div class="col">
-      <button class="btn btn-primary btn-block">Generator datas</button>
+      <button (click)="searchDatas(generatorForm.value)" class="btn btn-primary btn-block">Generator datas</button>
     </div>
   </div>
 </form>

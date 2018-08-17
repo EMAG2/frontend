@@ -6,7 +6,7 @@ const PORT = 3000;
 
 export const environment = {
   production: false,
-  api: `http://localhost:${PORT}`
+  api: `http://localhost:${PORT}/api`
 };
 
 /*

@@ -18,6 +18,7 @@ import { DoYouNeedHelpComponent } from './do-you-need-help/do-you-need-help.comp
 import { SuportService } from './dashboard/suport/suport.service';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CustExtBrowserXhr } from './utils/custExtBrowserXhr.model';
+import { GeneratorService } from './dashboard/generator/generator.service';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CustExtBrowserXhr } from './utils/custExtBrowserXhr.model';
   providers: [
     { provide: BrowserXhr, useClass: CustExtBrowserXhr },
     { provide: LocationStrategy, useClass: HashLocationStrategy },
+    GeneratorService,
     SuportService
   ],
   bootstrap: [AppComponent]
